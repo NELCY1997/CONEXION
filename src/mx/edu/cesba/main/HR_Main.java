@@ -17,23 +17,25 @@ public class HR_Main {
         //Creacion de objetos:
         Employee e1 = new Employee();//tipo de dato, identificador, asignador, valor del objeto (tipo de objeto) CONSTRUCTOR
         Employee e2 = new Employee();
-        e1.id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su ID: "));//convertir de int a string
-        e1.firstName = JOptionPane.showInputDialog("Ingrese su nombre: ");
-        e1.lastName = JOptionPane.showInputDialog("Ingrese su apellido: ");
-        e1.age = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad: "));//convertir de int a string
-        e1.email = JOptionPane.showInputDialog("Ingrese su correo: ");
-        e1.phoneNumber = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su numero telefonico: "));//convertir de int a string
-        e1.salary = Double.parseDouble(JOptionPane.showInputDialog("Ingrese su salario: "));//convertir de int a string
-        e1.hireDate = JOptionPane.showInputDialog("Ingrese su fecha de contratacion: ");
         
-        e2.id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su ID: "));//convertir de int a string
+        
+        e1.setId( Integer.parseInt(JOptionPane.showInputDialog("Ingrese su ID: ")));//convertir de int a string
+        e1.setfirstName (JOptionPane.showInputDialog("Ingrese su nombre: "));
+        e1.setLastName ( JOptionPane.showInputDialog("Ingrese su apellido: "));
+        e1.setAge ( Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad: ")));//convertir de int a string
+        e1.setEmail ( JOptionPane.showInputDialog("Ingrese su correo: "));
+        e1.setPhoneNumber ( Integer.parseInt(JOptionPane.showInputDialog("Ingrese su numero telefonico: ")));//convertir de int a string
+        e1.setSalary ( Double.parseDouble(JOptionPane.showInputDialog("Ingrese su salario: ")));//convertir de int a string
+        e1.setHireDate ( JOptionPane.showInputDialog("Ingrese su fecha de contratacion: "));
+        
+       /* e2.id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su ID: "));//convertir de int a string
         e2.firstName = JOptionPane.showInputDialog("Ingrese su nombre: ");
         e2.lastName = JOptionPane.showInputDialog("Ingrese su apellido: ");
         e2.age = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad: "));//convertir de int a string
         e2.email = JOptionPane.showInputDialog("Ingrese su correo: ");
         e2.phoneNumber = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su numero telefonico: "));//convertir de int a string
         e2.salary = Double.parseDouble(JOptionPane.showInputDialog("Ingrese su salario: "));//convertir de int a string
-        e2.hireDate = JOptionPane.showInputDialog("Ingrese su fecha de contratacion: ");
+        e2.hireDate = JOptionPane.showInputDialog("Ingrese su fecha de contratacion: ");*/
         
         e1.getDetails();
         System.out.println("-----------------------------------------------------------------");
